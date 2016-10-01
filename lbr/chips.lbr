@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -4786,6 +4786,61 @@ I2C, clock output, interrupt output</description>
 <text x="15.24" y="-12.7" size="1.778" layer="95" ratio="12" align="bottom-center">MEMS
 MICROPHONE</text>
 </symbol>
+<symbol name="CC2640">
+<pin name="RF_P" x="-25.4" y="33.02" length="short"/>
+<pin name="DIO_4/SC/HD" x="-25.4" y="10.16" length="short"/>
+<pin name="DIO_11" x="-25.4" y="-12.7" length="short"/>
+<pin name="DIO_23/AO" x="25.4" y="5.08" length="short" rot="R180"/>
+<pin name="DIO_26/AO" x="25.4" y="-5.08" length="short" rot="R180"/>
+<pin name="DIO_27/AO" x="25.4" y="-7.62" length="short" rot="R180"/>
+<pin name="VDDS" x="25.4" y="-20.32" length="short" rot="R180"/>
+<pin name="DCDC_SW@1" x="25.4" y="-22.86" length="short" rot="R180"/>
+<pin name="X24M_N" x="25.4" y="-27.94" length="short" rot="R180"/>
+<pin name="X24M_P" x="25.4" y="-30.48" length="short" rot="R180"/>
+<pin name="DCDC_SW@2" x="25.4" y="-35.56" length="short" rot="R180"/>
+<pin name="RESET_N" x="25.4" y="7.62" length="short" rot="R180"/>
+<pin name="DCDC_SW" x="25.4" y="12.7" length="short" rot="R180"/>
+<pin name="GND1" x="0" y="-40.64" length="short" rot="R90"/>
+<pin name="DIO_28/AO" x="25.4" y="-10.16" length="short" rot="R180"/>
+<pin name="RF_N" x="-25.4" y="30.48" length="short"/>
+<pin name="X32K_Q1" x="-25.4" y="27.94" length="short"/>
+<pin name="X32K_Q2" x="-25.4" y="25.4" length="short"/>
+<pin name="DIO_0/SENSORCONTROL" x="-25.4" y="22.86" length="short"/>
+<pin name="DIO_1/SENSORCONTROL" x="-25.4" y="20.32" length="short"/>
+<pin name="DIO_2/SC/HD" x="-25.4" y="17.78" length="short"/>
+<pin name="DIO_3/SC/HD" x="-25.4" y="15.24" length="short"/>
+<pin name="DIO_5/SC/HD" x="-25.4" y="7.62" length="short"/>
+<pin name="DIO_6/SC/HD" x="-25.4" y="5.08" length="short"/>
+<pin name="DIO_7/SC/HD" x="-25.4" y="2.54" length="short"/>
+<pin name="VDDS@2" x="-25.4" y="0" length="short"/>
+<pin name="DIO_8/" x="-25.4" y="-2.54" length="short"/>
+<pin name="DIO_9" x="-25.4" y="-5.08" length="short"/>
+<pin name="DIO_10" x="-25.4" y="-7.62" length="short"/>
+<pin name="DIO_12" x="-25.4" y="-15.24" length="short"/>
+<pin name="DIO_13" x="-25.4" y="-17.78" length="short"/>
+<pin name="DIO_14" x="-25.4" y="-20.32" length="short"/>
+<pin name="DIO_15" x="-25.4" y="-22.86" length="short"/>
+<pin name="VDDS@3" x="-25.4" y="-25.4" length="short"/>
+<pin name="DCOUPL" x="-25.4" y="-27.94" length="short"/>
+<pin name="JTAG_TSMC" x="-25.4" y="-30.48" length="short"/>
+<pin name="JTAG_TCKC" x="25.4" y="33.02" length="short" rot="R180"/>
+<pin name="DIO_16/JTAG_TDO" x="25.4" y="30.48" length="short" rot="R180"/>
+<pin name="DIO_17/JTAG_TDI" x="25.4" y="27.94" length="short" rot="R180"/>
+<pin name="DIO_18" x="25.4" y="25.4" length="short" rot="R180"/>
+<pin name="DIO_19" x="25.4" y="22.86" length="short" rot="R180"/>
+<pin name="DIO_20" x="25.4" y="20.32" length="short" rot="R180"/>
+<pin name="DIO_25/AO" x="25.4" y="-2.54" length="short" rot="R180"/>
+<pin name="DIO_21" x="25.4" y="17.78" length="short" rot="R180"/>
+<pin name="DIO_22" x="25.4" y="15.24" length="short" rot="R180"/>
+<pin name="DIO_24/AO" x="25.4" y="2.54" length="short" rot="R180"/>
+<wire x1="-22.86" y1="38.1" x2="-22.86" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-38.1" x2="22.86" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-38.1" x2="22.86" y2="38.1" width="0.254" layer="94"/>
+<wire x1="22.86" y1="38.1" x2="-22.86" y2="38.1" width="0.254" layer="94"/>
+<pin name="DIO_29/AO" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="DIO_30/AO" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="VDDS@4" x="25.4" y="10.16" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BQ25504" prefix="U">
@@ -7745,6 +7800,69 @@ DS RMS-to-DC Converter</description>
 <technology name="">
 <attribute name="DIGIKEY" value="497-14947-1-ND" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CC2640">
+<gates>
+<gate name="G$1" symbol="CC2640" x="-17.78" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="QFN-48-7MM">
+<connects>
+<connect gate="G$1" pin="DCDC_SW" pad="33"/>
+<connect gate="G$1" pin="DCDC_SW@1" pad="45"/>
+<connect gate="G$1" pin="DCDC_SW@2" pad="48"/>
+<connect gate="G$1" pin="DCOUPL" pad="23"/>
+<connect gate="G$1" pin="DIO_0/SENSORCONTROL" pad="5"/>
+<connect gate="G$1" pin="DIO_1/SENSORCONTROL" pad="6"/>
+<connect gate="G$1" pin="DIO_10" pad="16"/>
+<connect gate="G$1" pin="DIO_11" pad="17"/>
+<connect gate="G$1" pin="DIO_12" pad="18"/>
+<connect gate="G$1" pin="DIO_13" pad="19"/>
+<connect gate="G$1" pin="DIO_14" pad="20"/>
+<connect gate="G$1" pin="DIO_15" pad="21"/>
+<connect gate="G$1" pin="DIO_16/JTAG_TDO" pad="26"/>
+<connect gate="G$1" pin="DIO_17/JTAG_TDI" pad="27"/>
+<connect gate="G$1" pin="DIO_18" pad="28"/>
+<connect gate="G$1" pin="DIO_19" pad="29"/>
+<connect gate="G$1" pin="DIO_2/SC/HD" pad="7"/>
+<connect gate="G$1" pin="DIO_20" pad="30"/>
+<connect gate="G$1" pin="DIO_21" pad="31"/>
+<connect gate="G$1" pin="DIO_22" pad="32"/>
+<connect gate="G$1" pin="DIO_23/AO" pad="36"/>
+<connect gate="G$1" pin="DIO_24/AO" pad="37"/>
+<connect gate="G$1" pin="DIO_25/AO" pad="38"/>
+<connect gate="G$1" pin="DIO_26/AO" pad="39"/>
+<connect gate="G$1" pin="DIO_27/AO" pad="40"/>
+<connect gate="G$1" pin="DIO_28/AO" pad="41"/>
+<connect gate="G$1" pin="DIO_29/AO" pad="42"/>
+<connect gate="G$1" pin="DIO_3/SC/HD" pad="8"/>
+<connect gate="G$1" pin="DIO_30/AO" pad="43"/>
+<connect gate="G$1" pin="DIO_4/SC/HD" pad="9"/>
+<connect gate="G$1" pin="DIO_5/SC/HD" pad="10"/>
+<connect gate="G$1" pin="DIO_6/SC/HD" pad="11"/>
+<connect gate="G$1" pin="DIO_7/SC/HD" pad="12"/>
+<connect gate="G$1" pin="DIO_8/" pad="14"/>
+<connect gate="G$1" pin="DIO_9" pad="15"/>
+<connect gate="G$1" pin="GND1" pad="THERMAL"/>
+<connect gate="G$1" pin="JTAG_TCKC" pad="25"/>
+<connect gate="G$1" pin="JTAG_TSMC" pad="24"/>
+<connect gate="G$1" pin="RESET_N" pad="35"/>
+<connect gate="G$1" pin="RF_N" pad="2"/>
+<connect gate="G$1" pin="RF_P" pad="1"/>
+<connect gate="G$1" pin="VDDS" pad="34"/>
+<connect gate="G$1" pin="VDDS@2" pad="13"/>
+<connect gate="G$1" pin="VDDS@3" pad="22"/>
+<connect gate="G$1" pin="VDDS@4" pad="44"/>
+<connect gate="G$1" pin="X24M_N" pad="46"/>
+<connect gate="G$1" pin="X24M_P" pad="47"/>
+<connect gate="G$1" pin="X32K_Q1" pad="3"/>
+<connect gate="G$1" pin="X32K_Q2" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
